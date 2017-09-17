@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Sokoban.Model
 {
-    class Tile
+    abstract class Tile
     {
+        private bool IsWalkable { get; set; }
+        private int LocX { get; set; }
+        private int LocY { get; set; }
+
+        public Tile(bool isWalkable, int locX, int locY)
+        {
+            IsWalkable = isWalkable;
+            LocX = locX;
+            LocY = locY;
+        }
     }
 }

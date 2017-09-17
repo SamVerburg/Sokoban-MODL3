@@ -8,5 +8,12 @@ namespace Sokoban.Model
 {
     class FileReader
     {
+        public Puzzle readTextFile(int puzzleNr)
+        {
+            Tile[][] tileArray = null;
+            //Haal tile[][] uit file
+
+            return new Puzzle(tileArray);
+        }
     }
 }

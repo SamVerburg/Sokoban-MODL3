@@ -8,11 +8,13 @@ namespace Sokoban.Model
 {
     class Puzzle
     {
-        private Tile[][] tileArray;
-        
-        public Puzzle(Tile[][] tileArray)
+        private Tile[,] tileArray;
+        private Forklift forkLift;
+
+        public Puzzle(Tile[,] tileArray, Forklift forkLift)
         {
             this.tileArray = tileArray;
+            this.forkLift = forkLift;
         }
     }
 }

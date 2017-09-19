@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Sokoban.Model
 {
-    class Wall
+    class Wall : Tile
     {
+        public Wall()
+        {
+            this.IsWalkable = false;
+        }
     }
 }

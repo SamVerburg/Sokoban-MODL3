@@ -8,15 +8,33 @@ namespace Sokoban.Model
 {
     abstract class Tile
     {
-        private bool IsWalkable { get; set; }
-        private int LocX { get; set; }
-        private int LocY { get; set; }
-
-        public Tile(bool isWalkable, int locX, int locY)
+        protected bool IsWalkable { get; set; }
+        protected int LocX { get; set; }
+        protected int LocY { get; set; }
+        public bool hasChest { get; set; }
+        public override string ToString()
         {
-            IsWalkable = isWalkable;
-            LocX = locX;
-            LocY = locY;
+            string print = "";
+            if (this is Wall)
+            {
+                print = "#";
+            }
+            else if (this is Floor)
+            {
+                if (this.hasChest)
+                {
+                    print = "o";
+                }
+                else
+                {
+                    print = ".";
+                }
+            }
+            else if (this is Destination)
+            {
+                print = "x";
+            }
+            return print;
         }
     }
 }

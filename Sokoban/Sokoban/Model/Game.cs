@@ -19,7 +19,7 @@ namespace Sokoban.Model
 
         public void SelectPuzzle(int puzzleNr)
         {
-            this.CurrentPuzzle = FileReader.readTextFile(puzzleNr);
+            this.CurrentPuzzle = FileReader.ReadTextFile(puzzleNr);
         }
     }
 }

@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Sokoban.Model
 {
-    class Floor
+    class Floor : Tile
     {
+        
+        public Floor(Boolean hasChest)
+        {
+            this.IsWalkable = true;
+            this.hasChest = hasChest;
+        }
     }
 }

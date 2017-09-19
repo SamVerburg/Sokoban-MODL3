@@ -8,7 +8,7 @@ namespace Sokoban.Model
 {
     class Game
     {
-        private List<Object> Oobjects { get; set; }
+        private List<Object> Objects { get; set; }
         private Puzzle CurrentPuzzle { get; set; }
         private FileReader FileReader { get; set; }
         

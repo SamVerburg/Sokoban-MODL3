@@ -11,16 +11,11 @@ namespace Sokoban.Model
 {
     class FileReader
     {
-        public FileReader()
-        {
-            ReadTextFile(1);
-            Console.ReadLine();
-        }
-
         public Puzzle ReadTextFile(int puzzleNr)
         {
             Tile[,] tileArray = null;
             Forklift forkLift = null;
+            List<Tile> Destinations = new List<Tile>();
 
             string line = "";
             int counter = 0;
@@ -36,65 +31,42 @@ namespace Sokoban.Model
                     longestLine = line.Length;
                 }
             }
-
             tileArray = new Tile[counter, longestLine];
 
-            counter = 0;
+            int y = 0;
 
             System.IO.StreamReader file2 =
                 new System.IO.StreamReader(DirectoryGoUp(System.AppDomain.CurrentDomain.BaseDirectory, 3) + @"\Puzzles\doolhof" + puzzleNr + ".txt");
             //INSERTING VALUES FROM TEXT FILE INTO TILE ARRAY
             while ((line = file2.ReadLine()) != null)
             {
-                for (int i = 0; i < line.Length; i++)
+                for (int x = 0; x < line.Length; x++)
                 {
-                    switch (line[i])
+                    switch (line[x])
                     {
                         case '#':
-                            tileArray[counter, i] = new Wall();
+                            tileArray[y, x] = new Wall();
                             break;
                         case 'x':
-                            tileArray[counter, i] = new Destination();
+                            tileArray[y, x] = new Destination();
+                            Destinations.Add(tileArray[y, x]);
                             break;
                         case '.':
-                            tileArray[counter, i] = new Floor(false);
+                            tileArray[y, x] = new Floor(false);
                             break;
                         case 'o':
-                            tileArray[counter, i] = new Floor(true);
+                            tileArray[y, x] = new Floor(true);
                             break;
                         case '@':
-                            forkLift = new Forklift(counter, i);
+                            tileArray[y, x] = new Floor(false);
+                            forkLift = new Forklift(y, x);
                             break;
                     }
                 }
-                counter++;
+                y++;
             }
-
-            //PRINTING CURRENT PUZZLE
-            for (int x = 0; x < tileArray.GetLength(0); x++)
-            {
-                for (int y = 0; y < tileArray.GetLength(1); y++)
-                {
-                    if (tileArray[x, y] != null)
-                    {
-                        Console.Write(tileArray[x, y].ToString());
-                    }
-                    else
-                    {
-                        if (forkLift.LocX == x && forkLift.LocY == y)
-                        {
-                            Console.Write("@");
-                        }
-                        else
-                        {
-                            Console.Write(" ");
-                        }
-                    }
-
-                }
-                Console.WriteLine();
-            }
-            return new Puzzle(tileArray, forkLift);
+            
+            return new Puzzle(tileArray, forkLift, Destinations);
         }
 
         //GOING UP A DIRECTORY (MIGHT BE DONE BETTER SOMEHOW BUT I COULDNT FIGURE IT OUT :()

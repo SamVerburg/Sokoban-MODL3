@@ -12,5 +12,10 @@ namespace Sokoban.Model
         {
             this.IsWalkable = false;
         }
+
+        public override string ToString()
+        {
+            return "█";
+        }
     }
 }

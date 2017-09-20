@@ -13,7 +13,7 @@ namespace Sokoban
     {
         static void Main(string[] args)
         {
-            new FileReader();
+            new InputView();
         }
     }
 }

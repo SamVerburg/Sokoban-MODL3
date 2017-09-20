@@ -8,18 +8,14 @@ namespace Sokoban.Model
 {
     class Game
     {
-        private List<Object> Objects { get; set; }
-        private Puzzle CurrentPuzzle { get; set; }
-        private FileReader FileReader { get; set; }
-        
-        public Game()
-        {
-
-        }
+        public List<Object> Objects { get; set; }
+        public Puzzle CurrentPuzzle { get; set; }
+        public FileReader FileReader { get; set; }
 
         public void SelectPuzzle(int puzzleNr)
         {
-            this.CurrentPuzzle = FileReader.ReadTextFile(puzzleNr);
+            this.FileReader = new FileReader();
+            this.CurrentPuzzle = this.FileReader.ReadTextFile(puzzleNr);
         }
     }
 }

@@ -37,6 +37,8 @@ namespace Sokoban.View
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("Gebruik de pijltjestoetsen om de heftruk te bewegen");
+            Console.WriteLine("Druk op 's' om te stoppen");
         }
     }
 }

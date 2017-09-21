@@ -23,6 +23,7 @@ namespace Sokoban.View
 
         private void StartupMessage()
         {
+            Console.Clear();
             Console.WriteLine("╔══════════════════════════════════════════════════╗");
             Console.WriteLine("║ Welkom bij Sokoban                               ║");
             Console.WriteLine("╠═════════════════════════════╦════════════════════╣");
@@ -57,7 +58,6 @@ namespace Sokoban.View
                     if (number > 0 && number < 5)
                     {
                         gc.SelectAndShowPuzzle(number);
-                        Console.WriteLine("Gebruik de pijltjestoetsen om de heftruk te bewegen");
                         return;
                     }
                     else
@@ -81,17 +81,19 @@ namespace Sokoban.View
                 switch (ch)
                 {
                     case ConsoleKey.LeftArrow:
-                        gc.MoveForklift(-1, 0);
-                        break;
-                    case ConsoleKey.RightArrow:
-                        gc.MoveForklift(1, 0);
-                        break;
-                    case ConsoleKey.UpArrow:
-                        gc.MoveForklift(0, 1);
-                        break;
-                    case ConsoleKey.DownArrow:
                         gc.MoveForklift(0, -1);
                         break;
+                    case ConsoleKey.RightArrow:
+                        gc.MoveForklift(0, 1);
+                        break;
+                    case ConsoleKey.UpArrow:
+                        gc.MoveForklift(-1, 0);
+                        break;
+                    case ConsoleKey.DownArrow:
+                        gc.MoveForklift(1, 0);
+                        break;
+                    case ConsoleKey.S:
+                        return;
                 }
                 gc.ShowCurrentPuzzle();
             }

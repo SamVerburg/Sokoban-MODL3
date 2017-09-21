@@ -8,7 +8,6 @@ namespace Sokoban.Model
 {
     class Game
     {
-        public List<Object> Objects { get; set; }
         public Puzzle CurrentPuzzle { get; set; }
         public FileReader FileReader { get; set; }
 

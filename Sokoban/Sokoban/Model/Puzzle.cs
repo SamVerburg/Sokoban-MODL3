@@ -1,61 +1,60 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Remoting;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using System.Collections.Generic;
 namespace Sokoban.Model
 {
-    class Puzzle
+    internal class Puzzle
     {
-        public bool IsPlaying { get; set; } = true;
-        public Tile[,] TileArray { get; set; }
-        public Forklift ForkLift { get; set; }
-        public List<Tile> Destinations { get; set; }
-
         public Puzzle(Tile[,] tileArray, Forklift forkLift, List<Tile> destinations)
         {
             this.TileArray = tileArray;
             this.ForkLift = forkLift;
             this.Destinations = destinations;
         }
+        public bool IsPlaying { get; set; } = true;
 
-        public void MoveForklift(int dirX, int dirY)
+        public Tile[,] TileArray { get; set; }
+
+        public Forklift ForkLift { get; set; }
+
+        public List<Tile> Destinations { get; set; }
+
+        public void MoveForklift(int dirY, int dirX)
         {
-            int newX = ForkLift.LocY + dirX;
-            int newY = ForkLift.LocX - dirY;
+            int newY = this.ForkLift.LocX + dirY; 
+            int newX = this.ForkLift.LocY + dirX;
 
-            if (TileArray[newY, newX].HasChest)
+            Tile nextTile = this.TileArray[newY, newX];
+            if (nextTile.HasChest)
             {
-                if (TileArray[newY - dirY, newX + dirX].IsWalkable && !TileArray[newY - dirY, newX + dirX].HasChest)
+                //If the next tile has a chest
+                //Checks if the chest can be moved one position further
+                Tile secondNextTile = this.TileArray[newY + dirY, newX + dirX];
+                if (secondNextTile.IsWalkable
+                    && !secondNextTile.HasChest)
                 {
-                    TileArray[newY, newX].HasChest = false;
-                    TileArray[newY - dirY, newX + dirX].HasChest = true;
-                    ForkLift.LocY += dirX;
-                    ForkLift.LocX -= dirY;
+                    nextTile.HasChest = false;
+                    secondNextTile.HasChest = true;
+                    this.ForkLift.LocY += dirX;
+                    this.ForkLift.LocX += dirY;
                 }
             }
-            else if (TileArray[newY, newX] is Wall == false)
+            else if (nextTile.IsWalkable)
             {
-                ForkLift.LocY += dirX;
-                ForkLift.LocX -= dirY;
+                this.ForkLift.LocY += dirX;
+                this.ForkLift.LocX += dirY;
             }
-            CheckWon();
+            this.CheckWon();
         }
 
         public void CheckWon()
         {
-            bool stillPlaying = false;
-            foreach (Tile t in Destinations)
-            {
+            var stillPlaying = false;
+            foreach (var t in this.Destinations)
                 if (!t.HasChest)
                 {
                     stillPlaying = true;
                     break;
                 }
-            }
-            IsPlaying = stillPlaying;
+            this.IsPlaying = stillPlaying;
         }
     }
 }

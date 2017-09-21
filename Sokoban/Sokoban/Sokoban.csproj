@@ -44,13 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\GameController.cs" />
-    <Compile Include="Model\Chest.cs" />
     <Compile Include="Model\Destination.cs" />
     <Compile Include="Model\FileReader.cs" />
     <Compile Include="Model\Floor.cs" />
     <Compile Include="Model\Forklift.cs" />
     <Compile Include="Model\Game.cs" />
-    <Compile Include="Model\Object.cs" />
     <Compile Include="Model\Tile.cs" />
     <Compile Include="Model\Wall.cs" />
     <Compile Include="Program.cs" />

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sokoban.Controller.GameController">
+    <Position X="11" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQCAACAAAAAAAAAAAAAAACAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\GameController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="game" />
+      <Property Name="outputView" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.Model.Destination">
+    <Position X="5.25" Y="9" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Destination.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Model.FileReader">
+    <Position X="8" Y="2" Width="1.5" />
+    <Members>
+      <Method Name="ReadTextFile" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\FileReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Model.Floor">
+    <Position X="7.5" Y="9" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Floor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Model.Forklift">
+    <Position X="2" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Forklift.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Model.Game">
+    <Position X="8" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Model\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CurrentPuzzle" />
+      <Property Name="FileReader" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.Model.Puzzle">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAQAAAAAAAAAAAQAAAAFAAAAAAAAAEA=</HashCode>
+      <FileName>Model\Puzzle.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ForkLift" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Destinations" />
+      <Property Name="TileArray" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Sokoban.Model.Tile">
+    <Position X="4.75" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Model\Tile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Model.Wall">
+    <Position X="3" Y="9" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Wall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.View.InputView">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAQAAAAAAAAAAAAMAAAAAAAAAEA=</HashCode>
+      <FileName>View\InputView.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="gc" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.View.OutputView">
+    <Position X="14" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\OutputView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -98,7 +98,6 @@ namespace Sokoban.View
                         action = true;
                         break;
                     case ConsoleKey.S:
-                        action = true;
                         return;
                 }
                 if (action)

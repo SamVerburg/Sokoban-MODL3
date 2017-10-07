@@ -13,9 +13,11 @@ namespace Sokoban.Model
     {
         public Puzzle ReadTextFile(int puzzleNr)
         {
+            Tile first = null;
             Tile[,] tileArray = null;
-            Forklift forkLift = null;
-            List<Tile> Destinations = new List<Tile>();
+            Forklift forklift = null;
+            Employee employee = null;
+            List<Chest> chests = new List<Chest>();
 
             string line = "";
             int counter = 0;
@@ -49,24 +51,64 @@ namespace Sokoban.Model
                             break;
                         case 'x':
                             tileArray[y, x] = new Destination();
-                            Destinations.Add(tileArray[y, x]);
                             break;
                         case '.':
-                            tileArray[y, x] = new Floor(false);
+                            tileArray[y, x] = new Floor();
                             break;
                         case 'o':
-                            tileArray[y, x] = new Floor(true);
+                            tileArray[y, x] = new Floor();
+                            Chest c = new Chest(tileArray[y, x]);
+                            tileArray[y, x].MovableObject = c;
+                            chests.Add(c);
                             break;
                         case '@':
-                            tileArray[y, x] = new Floor(false);
-                            forkLift = new Forklift(y, x);
+                            tileArray[y, x] = new Floor();
+                            tileArray[y, x].MovableObject = new Forklift(tileArray[y, x]);
+                            forklift = (Forklift)tileArray[y, x].MovableObject;
+                            break;
+                        case ' ':
+                            tileArray[y, x] = new Empty();
+                            break;
+                        case '~':
+                            tileArray[y, x] = new Pit();
+                            break;
+                        case '$':
+                            tileArray[y, x] = new Floor();
+                            tileArray[y, x].MovableObject = new Employee(tileArray[y, x]);
+                            employee = (Employee)tileArray[y, x].MovableObject;
                             break;
                     }
                 }
                 y++;
             }
-            
-            return new Puzzle(tileArray, forkLift, Destinations);
+
+            first = tileArray[0, 0];
+            int width = tileArray.GetLength(1) - 1;
+            int height = tileArray.GetLength(0) - 1;
+            for (int x2 = 0; x2 <= width; x2++)
+            {
+                for (int y2 = 0; y2 <= height; y2++)
+                {
+                    Tile currentTile = tileArray[y2, x2];
+                    if (x2 + 1 <= width)
+                    {
+                        currentTile.Right = tileArray[y2, x2 + 1];
+                    }
+                    if (x2 - 1 >= 0)
+                    {
+                        currentTile.Left = tileArray[y2, x2 - 1];
+                    }
+                    if (y2 + 1 <= height)
+                    {
+                        currentTile.Down = tileArray[y2 + 1, x2];
+                    }
+                    if (y2 - 1 >= 0)
+                    {
+                        currentTile.Up = tileArray[y2 - 1, x2];
+                    }
+                }
+            }
+            return new Puzzle(first,forklift,employee,chests);
         }
 
         //GOING UP A DIRECTORY (MIGHT BE DONE BETTER SOMEHOW BUT I COULDNT FIGURE IT OUT :()

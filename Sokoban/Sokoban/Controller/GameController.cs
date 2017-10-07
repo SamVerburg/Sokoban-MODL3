@@ -11,28 +11,23 @@ namespace Sokoban.Controller
 {
     class GameController
     {
-        public OutputView outputView { get; set; }
-        public Game game { get; set; }
+        public OutputView OutputView { get; set; }
+        public Game Game { get; set; }
         public GameController()
         {
-            outputView = new OutputView();
-            game = new Game();
+            OutputView = new OutputView();
+            Game = new Game();
         }
 
         public void SelectAndShowPuzzle(int puzzleNr)
         {
-            game.SelectPuzzle(puzzleNr);
-            outputView.ShowPuzzle(game.CurrentPuzzle);
+            Game.SelectPuzzle(puzzleNr);
+            OutputView.ShowPuzzle(Game.CurrentPuzzle);
         }
 
         public void ShowCurrentPuzzle()
         {
-            outputView.ShowPuzzle(game.CurrentPuzzle);
-        }
-
-        public void MoveForklift(int dirX, int dirY)
-        {
-            game.CurrentPuzzle.MoveForklift(dirX,dirY);
+            OutputView.ShowPuzzle(Game.CurrentPuzzle);
         }
     }
 }

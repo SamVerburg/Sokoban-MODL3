@@ -6,16 +6,11 @@ using System.Threading.Tasks;
 
 namespace Sokoban.Model
 {
-    class Wall : Tile
+    class Empty : Tile
     {
-        public Wall()
-        {
-            this.IsWalkable = false;
-        }
-
         public override string ToString()
         {
-            return "█";
+            return " ";
         }
     }
 }

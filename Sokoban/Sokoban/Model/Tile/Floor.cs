@@ -8,18 +8,8 @@ namespace Sokoban.Model
 {
     class Floor : Tile
     {
-        public Floor(Boolean hasChest)
-        {
-            this.IsWalkable = true;
-            this.HasChest = hasChest;
-        }
-
         public override string ToString()
         {
-            if (this.HasChest)
-            {
-                return "o";
-            }
             return "·";
         }
     }

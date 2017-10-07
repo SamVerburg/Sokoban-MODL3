@@ -11,32 +11,26 @@ namespace Sokoban.View
     {
         public void ShowPuzzle(Puzzle puzzle)
         {
-            Tile[,] tileArray = puzzle.TileArray;
-            Forklift forkLift = puzzle.ForkLift;
             //PRINTING CURRENT PUZZLE
             Console.Clear();
             Console.WriteLine();
-            
-            for (int x = 0; x < tileArray.GetLength(0); x++)
+
+            for (Tile y = puzzle.First; y != null; y = y.Down)
             {
-                for (int y = 0; y < tileArray.GetLength(1); y++)
+                for (Tile x = y; x != null; x = x.Right)
                 {
-                    if (forkLift.LocX == x && forkLift.LocY == y)
+                    if (x.MovableObject != null)
                     {
-                        Console.Write("@");
-                    }
-                    else if (tileArray[x, y] != null)
-                    {
-                        Console.Write(tileArray[x, y].ToString());
+                        Console.Write(x.MovableObject.ToString());
                     }
                     else
-                    {
-                        Console.Write(" ");
+                    { 
+                        Console.Write(x.ToString());
                     }
-
                 }
                 Console.WriteLine();
             }
+
             Console.WriteLine("Gebruik de pijltjestoetsen om de heftruk te bewegen");
             Console.WriteLine("Druk op 's' om te stoppen");
         }

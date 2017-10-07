@@ -44,13 +44,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\GameController.cs" />
-    <Compile Include="Model\Destination.cs" />
+    <Compile Include="Model\Class1.cs" />
+    <Compile Include="Model\MovableObject\Chest.cs" />
+    <Compile Include="Model\Tile\Destination.cs" />
+    <Compile Include="Model\MovableObject\Employee.cs" />
+    <Compile Include="Model\Tile\Empty.cs" />
     <Compile Include="Model\FileReader.cs" />
-    <Compile Include="Model\Floor.cs" />
-    <Compile Include="Model\Forklift.cs" />
+    <Compile Include="Model\Tile\Floor.cs" />
+    <Compile Include="Model\MovableObject\Forklift.cs" />
     <Compile Include="Model\Game.cs" />
-    <Compile Include="Model\Tile.cs" />
-    <Compile Include="Model\Wall.cs" />
+    <Compile Include="Model\MovableObject\MovableObject.cs" />
+    <Compile Include="Model\Tile\Pit.cs" />
+    <Compile Include="Model\Tile\Tile.cs" />
+    <Compile Include="Model\Tile\Wall.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Puzzle.cs" />
@@ -65,6 +71,8 @@
     <Content Include="Puzzles\doolhof2.txt" />
     <Content Include="Puzzles\doolhof3.txt" />
     <Content Include="Puzzles\doolhof4.txt" />
+    <Content Include="Puzzles\doolhof5.txt" />
+    <Content Include="Puzzles\doolhof6.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

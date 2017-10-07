@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using Sokoban.Controller;
+using Sokoban.Model;
 
 namespace Sokoban.View
 {
@@ -38,7 +40,7 @@ namespace Sokoban.View
             Console.WriteLine("║      @ : truck              ║                    ║");
             Console.WriteLine("╚═════════════════════════════╩════════════════════╝");
             Console.WriteLine();
-            Console.WriteLine("> Kies een doolhof (1 - 4), s = stop");
+            Console.WriteLine("> Kies een doolhof (1 - 6), s = stop");
         }
 
         private void PuzzleSelect()
@@ -48,21 +50,16 @@ namespace Sokoban.View
             {
                 input = Console.ReadLine();
                 int number;
-                if (input == "s")
+                if (Int32.TryParse(input, out number))
                 {
-                    isPlaying = false;
-                    return;
-                }
-                else if (Int32.TryParse(input, out number))
-                {
-                    if (number > 0 && number < 5)
+                    if (number > 0 && number < 7)
                     {
                         gc.SelectAndShowPuzzle(number);
                         return;
                     }
                     else
                     {
-                        Console.WriteLine("Dit nummer is niet tussen 1 - 4");
+                        Console.WriteLine("Dit nummer is niet tussen 1 - 6");
                     }
                 }
                 else
@@ -75,27 +72,42 @@ namespace Sokoban.View
 
         private void PlayPuzzle()
         {
-            while (gc.game.CurrentPuzzle.IsPlaying)
+            Forklift forklift = gc.Game.CurrentPuzzle.ForkLift;
+            Employee employee = gc.Game.CurrentPuzzle.Employee;
+
+            while (gc.Game.CurrentPuzzle.IsPlaying)
             {
+                bool action = false;
                 var ch = Console.ReadKey(false).Key;
                 switch (ch)
                 {
                     case ConsoleKey.LeftArrow:
-                        gc.MoveForklift(0, -1);
+                        forklift.Move(3);
+                        action = true;
                         break;
                     case ConsoleKey.RightArrow:
-                        gc.MoveForklift(0, 1);
+                        forklift.Move(1);
+                        action = true;
                         break;
                     case ConsoleKey.UpArrow:
-                        gc.MoveForklift(-1, 0);
+                        forklift.Move(0);
+                        action = true;
                         break;
                     case ConsoleKey.DownArrow:
-                        gc.MoveForklift(1, 0);
+                        forklift.Move(2);
+                        action = true;
                         break;
                     case ConsoleKey.S:
+                        action = true;
                         return;
                 }
-                gc.ShowCurrentPuzzle();
+                if (action)
+                {
+                    employee.TryMove();
+
+                    gc.Game.CurrentPuzzle.CheckWon();
+                    gc.ShowCurrentPuzzle();
+                }
             }
         }
     }

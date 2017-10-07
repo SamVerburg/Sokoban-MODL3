@@ -8,17 +8,8 @@ namespace Sokoban.Model
 {
     class Destination : Tile
     {
-        public Destination()
-        {
-            this.IsWalkable = true;
-        }
-
         public override string ToString()
         {
-            if (this.HasChest)
-            {
-                return "ø";
-            }
             return "x";
         }
     }

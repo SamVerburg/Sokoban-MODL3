@@ -17,31 +17,12 @@ namespace Sokoban.View
         {
             while (isPlaying)
             {
-                StartupMessage();
+                gc.OutputView.StartupMessage();
                 PuzzleSelect();
                 PlayPuzzle();
             }
         }
 
-        private void StartupMessage()
-        {
-            Console.Clear();
-            Console.WriteLine("╔══════════════════════════════════════════════════╗");
-            Console.WriteLine("║ Welkom bij Sokoban                               ║");
-            Console.WriteLine("╠═════════════════════════════╦════════════════════╣");
-            Console.WriteLine("║ betekenis van de symbolen   ║ doel van het spel  ║");
-            Console.WriteLine("║                             ║                    ║");
-            Console.WriteLine("║ spatie : outerspace         ║ duw met de truck   ║");
-            Console.WriteLine("║      █ : muur               ║ de krat(ten)       ║");
-            Console.WriteLine("║      · : vloer              ║ naar de bestemming ║");
-            Console.WriteLine("║      o : krat               ║                    ║");
-            Console.WriteLine("║      ø : krat op bestemming ║                    ║");
-            Console.WriteLine("║      x : bestemming         ║                    ║");
-            Console.WriteLine("║      @ : truck              ║                    ║");
-            Console.WriteLine("╚═════════════════════════════╩════════════════════╝");
-            Console.WriteLine();
-            Console.WriteLine("> Kies een doolhof (1 - 6), s = stop");
-        }
 
         private void PuzzleSelect()
         {
@@ -100,13 +81,13 @@ namespace Sokoban.View
                     case ConsoleKey.S:
                         return;
                 }
-                if (action)
+                if (action && employee != null)
                 {
                     employee.TryMove();
-
-                    gc.Game.CurrentPuzzle.CheckWon();
-                    gc.ShowCurrentPuzzle();
                 }
+
+                gc.Game.CurrentPuzzle.CheckWon();
+                gc.ShowCurrentPuzzle();
             }
         }
     }

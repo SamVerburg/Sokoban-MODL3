@@ -13,15 +13,16 @@ namespace Sokoban.Model
         public override void Move(int direction)
         {
             Tile adjacentTile = GetAdjacentTile(direction);
-            if (adjacentTile.MovableObject is Chest && adjacentTile.GetAdjacentTile(direction).IsWalkable())
+            
+            if (GetAdjacentTile(direction).IsWalkable())
             {
-                adjacentTile.MovableObject.Move(direction);
                 adjacentTile.MovableObject = this;
                 Tile.MovableObject = null;
                 Tile = adjacentTile;
             }
-            else if (GetAdjacentTile(direction).IsWalkable())
+            else if (adjacentTile.MovableObject is Chest && adjacentTile.GetAdjacentTile(direction).IsWalkable())
             {
+                adjacentTile.MovableObject.Move(direction);
                 adjacentTile.MovableObject = this;
                 Tile.MovableObject = null;
                 Tile = adjacentTile;

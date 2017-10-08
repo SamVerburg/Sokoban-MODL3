@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\GameController.cs" />
-    <Compile Include="Model\Class1.cs" />
     <Compile Include="Model\MovableObject\Chest.cs" />
     <Compile Include="Model\Tile\Destination.cs" />
     <Compile Include="Model\MovableObject\Employee.cs" />
@@ -64,7 +63,9 @@
     <Compile Include="View\OutputView.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AKD Opened.cd" />
     <None Include="App.config" />
+    <None Include="AKD closed.cd" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Puzzles\doolhof1.txt" />

@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sokoban.View.InputView">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAEA=</HashCode>
+      <FileName>View\InputView.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="gc" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.View.OutputView">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\OutputView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Controller.GameController">
+    <Position X="10" Y="1.25" Width="1.5" />
+    <AssociationLine Name="OutputView" Type="Sokoban.View.OutputView" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="2.076" />
+        <Point X="8.75" Y="2.076" />
+        <Point X="8.75" Y="1.796" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAQAAACAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\GameController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OutputView" />
+      <Property Name="Game" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.Model.FileReader">
+    <Position X="12.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\FileReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Model.Game">
+    <Position X="10" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Model\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CurrentPuzzle" />
+      <Property Name="FileReader" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.Model.Chest">
+    <Position X="6.75" Y="5" Width="1.5" />
+    <InheritanceLine Type="Sokoban.Model.MovableObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.75" Y="7.079" />
+        <Point X="8.51" Y="7.079" />
+        <Point X="8.51" Y="5.817" />
+        <Point X="8.25" Y="5.817" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAIAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\MovableObject\Chest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Model.Employee">
+    <Position X="6.75" Y="7" Width="1.5" />
+    <InheritanceLine Type="Sokoban.Model.MovableObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.75" Y="7.079" />
+        <Point X="8.51" Y="7.079" />
+        <Point X="8.51" Y="8.021" />
+        <Point X="8.25" Y="8.021" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAIAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Model\MovableObject\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Model.Forklift">
+    <Position X="6.75" Y="9.5" Width="1.5" />
+    <InheritanceLine Type="Sokoban.Model.MovableObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.75" Y="7.079" />
+        <Point X="8.51" Y="7.079" />
+        <Point X="8.51" Y="10.378" />
+        <Point X="8.25" Y="10.378" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\MovableObject\Forklift.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Model.MovableObject">
+    <Position X="8.75" Y="6.25" Width="1.5" />
+    <AssociationLine Name="Tile" Type="Sokoban.Model.Tile">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.1" Y="-0.252" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Model\MovableObject\MovableObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tile" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.Model.Puzzle">
+    <Position X="7.25" Y="3" Width="1.5" />
+    <AssociationLine Name="First" Type="Sokoban.Model.Tile" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.748" />
+        <Point X="8" Y="4.87" />
+        <Point X="13.312" Y="4.87" />
+        <Point X="13.312" Y="5.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="ForkLift" Type="Sokoban.Model.Forklift" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="3.787" />
+        <Point X="5.6" Y="3.787" />
+        <Point X="5.6" Y="10.525" />
+        <Point X="6.75" Y="10.525" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Employee" Type="Sokoban.Model.Employee" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="3.902" />
+        <Point X="5.844" Y="3.902" />
+        <Point X="5.844" Y="8.227" />
+        <Point X="6.75" Y="8.227" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Chests" Type="Sokoban.Model.Chest" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="4.014" />
+        <Point X="6.124" Y="4.014" />
+        <Point X="6.124" Y="6.147" />
+        <Point X="6.75" Y="6.147" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQQQAAAAAAAAACAQAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Puzzle.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="First" />
+      <Property Name="ForkLift" />
+      <Property Name="Employee" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Chests" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Sokoban.Model.Destination">
+    <Position X="12.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tile\Destination.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Model.Empty">
+    <Position X="14.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tile\Empty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Model.Floor">
+    <Position X="11.75" Y="10" Width="1.5" />
+    <InheritanceLine Type="Sokoban.Model.Tile" FixedToPoint="true">
+      <Path>
+        <Point X="13.25" Y="7.574" />
+        <Point X="13.25" Y="7.76" />
+        <Point X="12.375" Y="7.76" />
+        <Point X="12.375" Y="10" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tile\Floor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Model.Pit">
+    <Position X="10.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tile\Pit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Model.Tile">
+    <Position X="12.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAQAAAAAAAAAAAAAAGACAAAIAAAI=</HashCode>
+      <FileName>Model\Tile\Tile.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MovableObject" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.Model.Wall">
+    <Position X="13.5" Y="10" Width="1.5" />
+    <InheritanceLine Type="Sokoban.Model.Tile" FixedToPoint="true">
+      <Path>
+        <Point X="13.25" Y="7.574" />
+        <Point X="13.25" Y="7.76" />
+        <Point X="14.16" Y="7.76" />
+        <Point X="14.16" Y="9.76" />
+        <Point X="14.125" Y="9.76" />
+        <Point X="14.125" Y="10" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tile\Wall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

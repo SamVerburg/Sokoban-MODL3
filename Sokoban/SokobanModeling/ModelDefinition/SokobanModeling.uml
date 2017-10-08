@@ -1,0 +1,1153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="426f8f9f-2e7e-409d-8424-72f07923195b"
+  name="SokobanModeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction
+        Id="468b78ba-e3e1-4236-b2fa-a9752f22a3eb"
+        name="ForkliftMove"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="39458e59-31d2-4e00-82e1-893a12e68eef"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="a7a8415c-7535-488d-abce-375eaf96fff2"
+                LastKnownName="MovableObject : Forklift"
+                LastKnownLocation="SokobanModeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="5344cab3-a5c3-48d5-b4dc-7c542f9c5f7b"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="SokobanModeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="ccfe2031-e84f-4eac-b489-9a343c43808f"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="SokobanModeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="5c67ca5f-4317-4d13-a3c8-32117d9f098d"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="SokobanModeling.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="ab645ef4-e6b0-4644-893c-25e400019dc6"
+                LastKnownName="OperandOccurrenceSpecification107"
+                LastKnownLocation="SokobanModeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="23040a91-a16e-44f7-9b3c-feed1fbfd081"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="SokobanModeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9157fd4e-a04c-426e-ba59-7a43d7fa00e5"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="SokobanModeling.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="a1d2a4f0-676e-411d-a08b-c77a00c974f1"
+                LastKnownName="OperandOccurrenceSpecification108"
+                LastKnownLocation="SokobanModeling.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="c2e35b9a-d6eb-4027-af56-d73ad9905590"
+                LastKnownName="OperandOccurrenceSpecification115"
+                LastKnownLocation="SokobanModeling.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="bc7f840e-842b-47c1-8f5b-507889663bb0"
+                LastKnownName="OperandOccurrenceSpecification116"
+                LastKnownLocation="SokobanModeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="51de23ee-57f3-4819-8277-584fad8259f5"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="SokobanModeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="ccfe2031-e84f-4eac-b489-9a343c43808f"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="776deaff-b54a-4cad-bb95-27ba76f4c275"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SokobanModeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a7a8415c-7535-488d-abce-375eaf96fff2"
+                LastKnownName="MovableObject : Forklift"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5c67ca5f-4317-4d13-a3c8-32117d9f098d"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="a7a8415c-7535-488d-abce-375eaf96fff2"
+                LastKnownName="MovableObject : Forklift"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="12ccd5ae-9884-45f1-a7cf-51cc581c1748"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="594db76c-4222-439b-9e58-dc75624898f5"
+                LastKnownName="InputView"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <combinedFragment
+            Id="52ba64b4-370d-4be0-bb08-e56a84fde935"
+            name="CombinedFragment1"
+            interactionOperator="Alt">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="2be4eafb-c1be-49fa-b7f5-d503945a04a6"
+                LastKnownName="Tile : Tile"
+                LastKnownLocation="SokobanModeling.uml" />
+              <lifelineMoniker
+                Id="a7a8415c-7535-488d-abce-375eaf96fff2"
+                LastKnownName="MovableObject : Forklift"
+                LastKnownLocation="SokobanModeling.uml" />
+              <lifelineMoniker
+                Id="8be30b00-5b0c-4080-91ca-a2ee0ad210c4"
+                LastKnownName="Tile : AdjacentTile"
+                LastKnownLocation="SokobanModeling.uml" />
+              <lifelineMoniker
+                Id="905d6f4f-a41f-4183-9c50-8fabcd046e5c"
+                LastKnownName="MovableObject : Chest"
+                LastKnownLocation="SokobanModeling.uml" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand
+                Id="8b6b9c70-95c5-4873-ae35-8259d5c8029c"
+                name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker
+                    Id="2be4eafb-c1be-49fa-b7f5-d503945a04a6"
+                    LastKnownName="Tile : Tile"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <lifelineMoniker
+                    Id="a7a8415c-7535-488d-abce-375eaf96fff2"
+                    LastKnownName="MovableObject : Forklift"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <lifelineMoniker
+                    Id="8be30b00-5b0c-4080-91ca-a2ee0ad210c4"
+                    LastKnownName="Tile : AdjacentTile"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <lifelineMoniker
+                    Id="905d6f4f-a41f-4183-9c50-8fabcd046e5c"
+                    LastKnownName="MovableObject : Chest"
+                    LastKnownLocation="SokobanModeling.uml" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint
+                    Id="d45436f5-c77b-43a3-ae76-dd070175c238" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker
+                    Id="f9784967-ea3d-4aae-83f2-c860eb396500"
+                    LastKnownName="OperandOccurrenceSpecification105"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="a3718063-21cd-4785-83bd-3a2b6f20842e"
+                    LastKnownName="OperandOccurrenceSpecification106"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="ab645ef4-e6b0-4644-893c-25e400019dc6"
+                    LastKnownName="OperandOccurrenceSpecification107"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="a1d2a4f0-676e-411d-a08b-c77a00c974f1"
+                    LastKnownName="OperandOccurrenceSpecification108"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="3c07093b-2201-4015-82dc-ae429cf3aa19"
+                    LastKnownName="OperandOccurrenceSpecification109"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="d5494330-7301-4e65-ad1e-08e032d5e656"
+                    LastKnownName="OperandOccurrenceSpecification110"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="4b7648a4-405b-4246-91b9-6a9ece1d04fe"
+                    LastKnownName="OperandOccurrenceSpecification111"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="7c8c1c97-6bcf-4c9e-8d57-569d3945eae5"
+                    LastKnownName="OperandOccurrenceSpecification112"
+                    LastKnownLocation="SokobanModeling.uml" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+              <interactionOperand
+                Id="2c83bc26-efdd-43e8-b639-5d7feb63cc37"
+                name="InteractionOperand2">
+                <coveredLifelines>
+                  <lifelineMoniker
+                    Id="2be4eafb-c1be-49fa-b7f5-d503945a04a6"
+                    LastKnownName="Tile : Tile"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <lifelineMoniker
+                    Id="a7a8415c-7535-488d-abce-375eaf96fff2"
+                    LastKnownName="MovableObject : Forklift"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <lifelineMoniker
+                    Id="8be30b00-5b0c-4080-91ca-a2ee0ad210c4"
+                    LastKnownName="Tile : AdjacentTile"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <lifelineMoniker
+                    Id="905d6f4f-a41f-4183-9c50-8fabcd046e5c"
+                    LastKnownName="MovableObject : Chest"
+                    LastKnownLocation="SokobanModeling.uml" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint
+                    Id="2a73b695-4a9e-4239-8c23-88bbf3e7e9f2" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker
+                    Id="b1666269-a39a-4991-ace6-72a28ec7205a"
+                    LastKnownName="OperandOccurrenceSpecification113"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="abc5c4d9-72fa-4d8a-b395-570afd0ec475"
+                    LastKnownName="OperandOccurrenceSpecification114"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="c2e35b9a-d6eb-4027-af56-d73ad9905590"
+                    LastKnownName="OperandOccurrenceSpecification115"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="bc7f840e-842b-47c1-8f5b-507889663bb0"
+                    LastKnownName="OperandOccurrenceSpecification116"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="60a40730-dcd6-4b0d-b022-71917bedadc5"
+                    LastKnownName="OperandOccurrenceSpecification117"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="15304681-7ff8-4da1-ae89-e20a0737e14b"
+                    LastKnownName="OperandOccurrenceSpecification118"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="b146506c-12d1-4448-9269-bcb334f641f1"
+                    LastKnownName="OperandOccurrenceSpecification119"
+                    LastKnownLocation="SokobanModeling.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="805ef537-1d60-4f14-b045-15aa254bb38b"
+                    LastKnownName="OperandOccurrenceSpecification120"
+                    LastKnownLocation="SokobanModeling.uml" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification
+            Id="3c07093b-2201-4015-82dc-ae429cf3aa19"
+            name="OperandOccurrenceSpecification109">
+            <covered>
+              <lifelineMoniker
+                Id="8be30b00-5b0c-4080-91ca-a2ee0ad210c4"
+                LastKnownName="Tile : AdjacentTile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="4b7648a4-405b-4246-91b9-6a9ece1d04fe"
+            name="OperandOccurrenceSpecification111">
+            <covered>
+              <lifelineMoniker
+                Id="905d6f4f-a41f-4183-9c50-8fabcd046e5c"
+                LastKnownName="MovableObject : Chest"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="ab645ef4-e6b0-4644-893c-25e400019dc6"
+            name="OperandOccurrenceSpecification107">
+            <covered>
+              <lifelineMoniker
+                Id="a7a8415c-7535-488d-abce-375eaf96fff2"
+                LastKnownName="MovableObject : Forklift"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="f9784967-ea3d-4aae-83f2-c860eb396500"
+            name="OperandOccurrenceSpecification105">
+            <covered>
+              <lifelineMoniker
+                Id="2be4eafb-c1be-49fa-b7f5-d503945a04a6"
+                LastKnownName="Tile : Tile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="cbaf7d5d-dd21-4659-9d02-76fa777ce77c"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="2be4eafb-c1be-49fa-b7f5-d503945a04a6"
+                LastKnownName="Tile : Tile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="97c9e2eb-4a10-4484-8d03-8d358a73351e"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="SokobanModeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f70615cc-7938-4dda-9f10-fc8c1fae0d49"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="SokobanModeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="cd4d5b5b-417f-4518-82ba-f969c7f99fcb"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="SokobanModeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5cc93cce-2bc2-4df6-9479-e27c534af2a6"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="SokobanModeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="4f9189a0-4b1e-49a3-ac67-bb2f6f094afc"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="SokobanModeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a6e977d6-b204-424a-ab4c-1c82c73a2bfd"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="SokobanModeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="f70615cc-7938-4dda-9f10-fc8c1fae0d49"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="53696131-76db-4358-85f2-e4b2e37eb07c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SokobanModeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2be4eafb-c1be-49fa-b7f5-d503945a04a6"
+                LastKnownName="Tile : Tile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="23040a91-a16e-44f7-9b3c-feed1fbfd081"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="a7a8415c-7535-488d-abce-375eaf96fff2"
+                LastKnownName="MovableObject : Forklift"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cd4d5b5b-417f-4518-82ba-f969c7f99fcb"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="2be4eafb-c1be-49fa-b7f5-d503945a04a6"
+                LastKnownName="Tile : Tile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="ba346f07-12c8-45d7-831b-cb8e9531328d"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="8be30b00-5b0c-4080-91ca-a2ee0ad210c4"
+                LastKnownName="Tile : AdjacentTile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="71826579-629e-40c3-964d-b149c70bc583"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="SokobanModeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="26fbc132-91ce-42e8-9542-3f4ffbc91cdd"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="SokobanModeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="e94de3ce-e49b-4915-81fd-e253651440ff"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="SokobanModeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="38c54ab9-6995-4c4a-85b8-8b1a64993b47"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="SokobanModeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e54a3aaf-431e-4702-8529-c569cea3dc92"
+                LastKnownName="MessageOccurrenceSpecification36"
+                LastKnownLocation="SokobanModeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="18a82856-b5e4-4eef-ba95-4d11712aed43"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="SokobanModeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="26fbc132-91ce-42e8-9542-3f4ffbc91cdd"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="126ad00c-5fd8-46f9-b00e-f04b0f502c15"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SokobanModeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8be30b00-5b0c-4080-91ca-a2ee0ad210c4"
+                LastKnownName="Tile : AdjacentTile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e94de3ce-e49b-4915-81fd-e253651440ff"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="8be30b00-5b0c-4080-91ca-a2ee0ad210c4"
+                LastKnownName="Tile : AdjacentTile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5cc93cce-2bc2-4df6-9479-e27c534af2a6"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="2be4eafb-c1be-49fa-b7f5-d503945a04a6"
+                LastKnownName="Tile : Tile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="217ecdc4-b117-4baf-b22d-b6a9a2e54987"
+            name="BehaviorExecutionSpecification9">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="905d6f4f-a41f-4183-9c50-8fabcd046e5c"
+                LastKnownName="MovableObject : Chest"
+                LastKnownLocation="SokobanModeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c1623028-093b-4692-9a3e-611647569ce2"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="SokobanModeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="83e6d21d-5d5c-4151-b594-84871fb6d24d"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="SokobanModeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="90cc80b6-eae5-44ff-aef2-fca0c8e684a5"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="SokobanModeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="04884cdc-7105-4c72-a2c0-a1aa258fe81d"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="SokobanModeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="83e6d21d-5d5c-4151-b594-84871fb6d24d"
+            name="ExecutionOccurrenceSpecification17">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="31de9f77-d565-46df-8c42-19be1871cbdb"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SokobanModeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="905d6f4f-a41f-4183-9c50-8fabcd046e5c"
+                LastKnownName="MovableObject : Chest"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="90cc80b6-eae5-44ff-aef2-fca0c8e684a5"
+            name="MessageOccurrenceSpecification34">
+            <covered>
+              <lifelineMoniker
+                Id="905d6f4f-a41f-4183-9c50-8fabcd046e5c"
+                LastKnownName="MovableObject : Chest"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="38c54ab9-6995-4c4a-85b8-8b1a64993b47"
+            name="MessageOccurrenceSpecification33">
+            <covered>
+              <lifelineMoniker
+                Id="8be30b00-5b0c-4080-91ca-a2ee0ad210c4"
+                LastKnownName="Tile : AdjacentTile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="04884cdc-7105-4c72-a2c0-a1aa258fe81d"
+            name="MessageOccurrenceSpecification35">
+            <covered>
+              <lifelineMoniker
+                Id="905d6f4f-a41f-4183-9c50-8fabcd046e5c"
+                LastKnownName="MovableObject : Chest"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e54a3aaf-431e-4702-8529-c569cea3dc92"
+            name="MessageOccurrenceSpecification36">
+            <covered>
+              <lifelineMoniker
+                Id="8be30b00-5b0c-4080-91ca-a2ee0ad210c4"
+                LastKnownName="Tile : AdjacentTile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c1623028-093b-4692-9a3e-611647569ce2"
+            name="ExecutionOccurrenceSpecification18">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8751cf42-cbcd-4975-9447-afb06947a201"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SokobanModeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="905d6f4f-a41f-4183-9c50-8fabcd046e5c"
+                LastKnownName="MovableObject : Chest"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4f9189a0-4b1e-49a3-ac67-bb2f6f094afc"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="2be4eafb-c1be-49fa-b7f5-d503945a04a6"
+                LastKnownName="Tile : Tile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="18a82856-b5e4-4eef-ba95-4d11712aed43"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="8be30b00-5b0c-4080-91ca-a2ee0ad210c4"
+                LastKnownName="Tile : AdjacentTile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="71826579-629e-40c3-964d-b149c70bc583"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b31ee5bc-5d08-493a-aee5-6c4a1a410b8d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SokobanModeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8be30b00-5b0c-4080-91ca-a2ee0ad210c4"
+                LastKnownName="Tile : AdjacentTile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9157fd4e-a04c-426e-ba59-7a43d7fa00e5"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="a7a8415c-7535-488d-abce-375eaf96fff2"
+                LastKnownName="MovableObject : Forklift"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a6e977d6-b204-424a-ab4c-1c82c73a2bfd"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="2be4eafb-c1be-49fa-b7f5-d503945a04a6"
+                LastKnownName="Tile : Tile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="97c9e2eb-4a10-4484-8d03-8d358a73351e"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="519540e7-afe6-4fb2-b490-586c3bb527b6"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SokobanModeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2be4eafb-c1be-49fa-b7f5-d503945a04a6"
+                LastKnownName="Tile : Tile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="a3718063-21cd-4785-83bd-3a2b6f20842e"
+            name="OperandOccurrenceSpecification106">
+            <covered>
+              <lifelineMoniker
+                Id="2be4eafb-c1be-49fa-b7f5-d503945a04a6"
+                LastKnownName="Tile : Tile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="a1d2a4f0-676e-411d-a08b-c77a00c974f1"
+            name="OperandOccurrenceSpecification108">
+            <covered>
+              <lifelineMoniker
+                Id="a7a8415c-7535-488d-abce-375eaf96fff2"
+                LastKnownName="MovableObject : Forklift"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="d5494330-7301-4e65-ad1e-08e032d5e656"
+            name="OperandOccurrenceSpecification110">
+            <covered>
+              <lifelineMoniker
+                Id="8be30b00-5b0c-4080-91ca-a2ee0ad210c4"
+                LastKnownName="Tile : AdjacentTile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="7c8c1c97-6bcf-4c9e-8d57-569d3945eae5"
+            name="OperandOccurrenceSpecification112">
+            <covered>
+              <lifelineMoniker
+                Id="905d6f4f-a41f-4183-9c50-8fabcd046e5c"
+                LastKnownName="MovableObject : Chest"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="b146506c-12d1-4448-9269-bcb334f641f1"
+            name="OperandOccurrenceSpecification119">
+            <covered>
+              <lifelineMoniker
+                Id="905d6f4f-a41f-4183-9c50-8fabcd046e5c"
+                LastKnownName="MovableObject : Chest"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="60a40730-dcd6-4b0d-b022-71917bedadc5"
+            name="OperandOccurrenceSpecification117">
+            <covered>
+              <lifelineMoniker
+                Id="8be30b00-5b0c-4080-91ca-a2ee0ad210c4"
+                LastKnownName="Tile : AdjacentTile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="b1666269-a39a-4991-ace6-72a28ec7205a"
+            name="OperandOccurrenceSpecification113">
+            <covered>
+              <lifelineMoniker
+                Id="2be4eafb-c1be-49fa-b7f5-d503945a04a6"
+                LastKnownName="Tile : Tile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="c2e35b9a-d6eb-4027-af56-d73ad9905590"
+            name="OperandOccurrenceSpecification115">
+            <covered>
+              <lifelineMoniker
+                Id="a7a8415c-7535-488d-abce-375eaf96fff2"
+                LastKnownName="MovableObject : Forklift"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="15304681-7ff8-4da1-ae89-e20a0737e14b"
+            name="OperandOccurrenceSpecification118">
+            <covered>
+              <lifelineMoniker
+                Id="8be30b00-5b0c-4080-91ca-a2ee0ad210c4"
+                LastKnownName="Tile : AdjacentTile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="bc7f840e-842b-47c1-8f5b-507889663bb0"
+            name="OperandOccurrenceSpecification116">
+            <covered>
+              <lifelineMoniker
+                Id="a7a8415c-7535-488d-abce-375eaf96fff2"
+                LastKnownName="MovableObject : Forklift"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="805ef537-1d60-4f14-b045-15aa254bb38b"
+            name="OperandOccurrenceSpecification120">
+            <covered>
+              <lifelineMoniker
+                Id="905d6f4f-a41f-4183-9c50-8fabcd046e5c"
+                LastKnownName="MovableObject : Chest"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="abc5c4d9-72fa-4d8a-b395-570afd0ec475"
+            name="OperandOccurrenceSpecification114">
+            <covered>
+              <lifelineMoniker
+                Id="2be4eafb-c1be-49fa-b7f5-d503945a04a6"
+                LastKnownName="Tile : Tile"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="51de23ee-57f3-4819-8277-584fad8259f5"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="a7a8415c-7535-488d-abce-375eaf96fff2"
+                LastKnownName="MovableObject : Forklift"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="13c8b25b-1298-4a90-a32b-90baaf2d3253"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="594db76c-4222-439b-9e58-dc75624898f5"
+                LastKnownName="InputView"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="5344cab3-a5c3-48d5-b4dc-7c542f9c5f7b"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="928bb095-6695-4974-906f-fe936275fa7a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SokobanModeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a7a8415c-7535-488d-abce-375eaf96fff2"
+                LastKnownName="MovableObject : Forklift"
+                LastKnownLocation="SokobanModeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="594db76c-4222-439b-9e58-dc75624898f5"
+            name="InputView"
+            isActor="false"
+            lifelineDisplayName="InputView">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="12ccd5ae-9884-45f1-a7cf-51cc581c1748"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="SokobanModeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="13c8b25b-1298-4a90-a32b-90baaf2d3253"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="SokobanModeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="a7a8415c-7535-488d-abce-375eaf96fff2"
+            name="MovableObject : Forklift"
+            isActor="false"
+            lifelineDisplayName="MovableObject : Forklift">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="ccfe2031-e84f-4eac-b489-9a343c43808f"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="SokobanModeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="5344cab3-a5c3-48d5-b4dc-7c542f9c5f7b"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="SokobanModeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="2be4eafb-c1be-49fa-b7f5-d503945a04a6"
+            name="Tile : Tile"
+            isActor="false"
+            lifelineDisplayName="Tile : Tile">
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker
+                Id="f9784967-ea3d-4aae-83f2-c860eb396500"
+                LastKnownName="OperandOccurrenceSpecification105"
+                LastKnownLocation="SokobanModeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f70615cc-7938-4dda-9f10-fc8c1fae0d49"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="SokobanModeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="97c9e2eb-4a10-4484-8d03-8d358a73351e"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="SokobanModeling.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="a3718063-21cd-4785-83bd-3a2b6f20842e"
+                LastKnownName="OperandOccurrenceSpecification106"
+                LastKnownLocation="SokobanModeling.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="b1666269-a39a-4991-ace6-72a28ec7205a"
+                LastKnownName="OperandOccurrenceSpecification113"
+                LastKnownLocation="SokobanModeling.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="abc5c4d9-72fa-4d8a-b395-570afd0ec475"
+                LastKnownName="OperandOccurrenceSpecification114"
+                LastKnownLocation="SokobanModeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="8be30b00-5b0c-4080-91ca-a2ee0ad210c4"
+            name="Tile : AdjacentTile"
+            isActor="false"
+            lifelineDisplayName="Tile : AdjacentTile">
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker
+                Id="3c07093b-2201-4015-82dc-ae429cf3aa19"
+                LastKnownName="OperandOccurrenceSpecification109"
+                LastKnownLocation="SokobanModeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="26fbc132-91ce-42e8-9542-3f4ffbc91cdd"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="SokobanModeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="71826579-629e-40c3-964d-b149c70bc583"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="SokobanModeling.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="d5494330-7301-4e65-ad1e-08e032d5e656"
+                LastKnownName="OperandOccurrenceSpecification110"
+                LastKnownLocation="SokobanModeling.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="60a40730-dcd6-4b0d-b022-71917bedadc5"
+                LastKnownName="OperandOccurrenceSpecification117"
+                LastKnownLocation="SokobanModeling.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="15304681-7ff8-4da1-ae89-e20a0737e14b"
+                LastKnownName="OperandOccurrenceSpecification118"
+                LastKnownLocation="SokobanModeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="905d6f4f-a41f-4183-9c50-8fabcd046e5c"
+            name="MovableObject : Chest"
+            isActor="false"
+            lifelineDisplayName="MovableObject : Chest">
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker
+                Id="4b7648a4-405b-4246-91b9-6a9ece1d04fe"
+                LastKnownName="OperandOccurrenceSpecification111"
+                LastKnownLocation="SokobanModeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="83e6d21d-5d5c-4151-b594-84871fb6d24d"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="SokobanModeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c1623028-093b-4692-9a3e-611647569ce2"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="SokobanModeling.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="7c8c1c97-6bcf-4c9e-8d57-569d3945eae5"
+                LastKnownName="OperandOccurrenceSpecification112"
+                LastKnownLocation="SokobanModeling.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="b146506c-12d1-4448-9269-bcb334f641f1"
+                LastKnownName="OperandOccurrenceSpecification119"
+                LastKnownLocation="SokobanModeling.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="805ef537-1d60-4f14-b045-15aa254bb38b"
+                LastKnownName="OperandOccurrenceSpecification120"
+                LastKnownLocation="SokobanModeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="3bbeda18-171f-484b-a328-a8045ace69d7"
+            name="Move(direction)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="12ccd5ae-9884-45f1-a7cf-51cc581c1748"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="SokobanModeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5c67ca5f-4317-4d13-a3c8-32117d9f098d"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="SokobanModeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="a0757e0c-70c1-45a9-ab5e-205006accd90"
+            name="GetAdjacentTile()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="23040a91-a16e-44f7-9b3c-feed1fbfd081"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="SokobanModeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cd4d5b5b-417f-4518-82ba-f969c7f99fcb"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="SokobanModeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="67c0ed69-90c5-426c-af58-551a1a5b4ce4"
+            name="IsWalkable()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5cc93cce-2bc2-4df6-9479-e27c534af2a6"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="SokobanModeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e94de3ce-e49b-4915-81fd-e253651440ff"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="SokobanModeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="43b15421-0cec-410e-b6e0-46bd2ca5e5f0"
+            name="Move(Direction)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="38c54ab9-6995-4c4a-85b8-8b1a64993b47"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="SokobanModeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="90cc80b6-eae5-44ff-aef2-fca0c8e684a5"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="SokobanModeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="80d3e379-ccd5-481a-b18d-ebefb6bf3aa4"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="04884cdc-7105-4c72-a2c0-a1aa258fe81d"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="SokobanModeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e54a3aaf-431e-4702-8529-c569cea3dc92"
+                LastKnownName="MessageOccurrenceSpecification36"
+                LastKnownLocation="SokobanModeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="ad459552-4020-4491-8cc2-e01c16f9de46"
+            name="true"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="18a82856-b5e4-4eef-ba95-4d11712aed43"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="SokobanModeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4f9189a0-4b1e-49a3-ac67-bb2f6f094afc"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="SokobanModeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="35afcfae-992f-42fc-ad8c-6da7b1e479d6"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a6e977d6-b204-424a-ab4c-1c82c73a2bfd"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="SokobanModeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9157fd4e-a04c-426e-ba59-7a43d7fa00e5"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="SokobanModeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="11d9a0eb-46a2-48da-a618-5fe5e2aad80a"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="51de23ee-57f3-4819-8277-584fad8259f5"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="SokobanModeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="13c8b25b-1298-4a90-a32b-90baaf2d3253"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="SokobanModeling.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="776deaff-b54a-4cad-bb95-27ba76f4c275"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="928bb095-6695-4974-906f-fe936275fa7a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="53696131-76db-4358-85f2-e4b2e37eb07c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="519540e7-afe6-4fb2-b490-586c3bb527b6"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="126ad00c-5fd8-46f9-b00e-f04b0f502c15"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b31ee5bc-5d08-493a-aee5-6c4a1a410b8d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="31de9f77-d565-46df-8c42-19be1871cbdb"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8751cf42-cbcd-4975-9447-afb06947a201"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
